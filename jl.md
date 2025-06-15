@@ -1,16 +1,244 @@
-# GitHub Pages
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>曹效喜 | 个人学术主页</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #2c3e50; /* 深蓝灰色 */
+            --secondary-color: #3498db; /* 亮蓝色 */
+            --background-color: #f4f7f6; /* 淡灰色背景 */
+            --card-background-color: #ffffff; /* 卡片背景色 */
+            --text-color: #333333; /* 主要文本颜色 */
+            --subtle-text-color: #555555; /* 次要文本颜色 */
+            --border-color: #e0e0e0; /* 边框颜色 */
+            --shadow: 0 4px 15px rgba(0, 0, 0, 0.08); /* 卡片阴影 */
+        }
 
-<img src="https://octodex.github.com/images/Professortocat_v2.png" align="right" height="200px" />
+        body {
+            font-family: 'Lato', 'Noto Sans SC', sans-serif;
+            line-height: 1.8;
+            color: var(--text-color);
+            background-color: var(--background-color);
+            margin: 0;
+            padding: 30px 15px;
+        }
 
-Hey ideal6076!
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: var(--card-background-color);
+            border-radius: 12px;
+            box-shadow: var(--shadow);
+            overflow: hidden;
+        }
 
-Mona here. I'm done preparing your exercise. Hope you enjoy! 💚
+        header {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            padding: 40px 30px;
+            text-align: center;
+        }
 
-Remember, it's self-paced so feel free to take a break! ☕️
+        header h1 {
+            font-size: 2.8em;
+            margin: 0;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
 
-[![](https://img.shields.io/badge/Go%20to%20Exercise-%E2%86%92-1f883d?style=for-the-badge&logo=github&labelColor=197935)](https://github.com/ideal6076/skills-github-pages/issues/1)
+        header p {
+            font-size: 1.2em;
+            margin: 10px 0 0;
+            opacity: 0.9;
+        }
+        
+        main {
+            padding: 20px 35px 35px 35px;
+        }
 
----
+        h2 {
+            font-size: 1.6em;
+            font-weight: 700;
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--secondary-color);
+            padding-bottom: 10px;
+            margin: 40px 0 25px 0;
+            display: inline-block;
+        }
 
-&copy; 2025 GitHub &bull; [Code of Conduct](https://www.contributor-covenant.org/version/2/1/code_of_conduct/code_of_conduct.md) &bull; [MIT License](https://gh.io/mit)
+        h3 {
+            font-size: 1.2em;
+            color: var(--primary-color);
+            margin-top: 30px;
+            border-left: 4px solid var(--secondary-color);
+            padding-left: 10px;
+        }
+        
+        a {
+            color: var(--secondary-color);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
 
+        a:hover {
+            color: var(--primary-color);
+            text-decoration: underline;
+        }
+
+        .section {
+            margin-bottom: 20px;
+        }
+
+        .paper-list {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .paper-list li {
+            margin-bottom: 20px;
+            padding-left: 20px;
+            position: relative;
+            border-left: 2px solid var(--border-color);
+            padding-bottom: 10px;
+        }
+        
+        .paper-list li::before {
+            content: '•';
+            position: absolute;
+            left: -8px;
+            top: -2px;
+            font-size: 1.5em;
+            color: var(--secondary-color);
+        }
+
+        .paper-list strong {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: 500;
+            color: var(--primary-color);
+        }
+
+        .paper-meta {
+            font-size: 0.95em;
+            color: var(--subtle-text-color);
+        }
+        
+        .tag {
+            background-color: #eaf3fb;
+            color: #2980b9;
+            padding: 4px 10px;
+            border-radius: 15px;
+            font-size: 0.85em;
+            font-weight: 500;
+            margin-right: 8px;
+            display: inline-block;
+            margin-top: 5px;
+            transition: all 0.3s ease;
+        }
+        
+        .tag:hover {
+            background-color: var(--secondary-color);
+            color: white;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+        }
+
+        .info-grid p, .section p {
+            margin: 8px 0;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 25px;
+            background-color: var(--background-color);
+            font-size: 0.9em;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>曹效喜 (Xiaoxi Cao)</h1>
+            <p>南开大学 经济学博士生</p>
+        </header>
+
+        <main>
+            <div class="section">
+                <h2>基本信息</h2>
+                <div class="info-grid">
+                    <p><strong>籍贯:</strong> 安徽 淮南</p>
+                    <p><strong>邮箱:</strong> <a href="mailto:2831789607@qq.com">2831789607@qq.com</a></p>
+                    <p><strong>电话:</strong> 131-3215-5672</p>
+                    <p><strong>学术引用:</strong> Google Scholar & CNKI 引用超300次</p>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>教育背景</h2>
+                <ul class="paper-list">
+                    <li><strong>南开大学 | 产业经济学 | 经济学博士</strong><span class="paper-meta">2022.09 - 至今</span></li>
+                    <li><strong>天津工业大学 | 应用经济学 | 经济学硕士</strong><span class="paper-meta">2019.09 - 2022.06</span></li>
+                    <li><strong>天津工业大学 | 经济学学士</strong><span class="paper-meta">2015.06 - 2019.09</span></li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>研究方向</h2>
+                <p>人工智能发展背景下的产业运行与发展</p>
+                <p>数字经济与人工智能的环境发展效应</p>
+            </div>
+
+            <div class="section">
+                <h2>科研论文</h2>
+                <h3>已发表论文 (Selected Publications)</h3>
+                <ul class="paper-list">
+                    <li><strong>Development zone policy and high-quality economic growth.</strong> <span class="paper-meta"><em>Regional Studies</em>. (导师一作本人二作)</span><span class="tag">SSCI Q1</span><span class="tag">IF: 4.67</span></li>
+                    <li><strong>Environmental regulation, foreign investment, and green innovation.</strong> <span class="paper-meta"><em>Environmental Science and Pollution Research</em>. (本人一作)</span><span class="tag">SCI Q2</span><span class="tag">IF: 5.19</span></li>
+                    <li><strong>A spatial econometric empirical research on industrial agglomeration and haze pollution.</strong> <span class="paper-meta"><em>Air Quality, Atmosphere and Health</em>. (导师一作本人二作)</span><span class="tag">SCI Q2</span><span class="tag">IF: 3.76</span></li>
+                    <li><strong>人工智能影响我国全要素生产率的机制与效应研究.</strong> <span class="paper-meta"><em>南开经济研究</em>. (导师一作本人二作)</span><span class="tag">CSSCI</span></li>
+                    <li><strong>企业数字化转型能否促进绿色创新——来自中国上市公司的证据.</strong> <span class="paper-meta"><em>中国地质大学学报</em>. (第二作者)</span><span class="tag">CSSCI</span></li>
+                    <li><strong>新型工业化建设与县域产业结构转型.</strong> <span class="paper-meta"><em>中国人口·资源与环境</em>. (录用待刊, 导师一作本人二作)</span><span class="tag">CSSCI</span></li>
+                </ul>
+                <h3>工作论文 (Working Papers)</h3>
+                <ul class="paper-list">
+                    <li><strong>Digital industrial agglomeration and breakthrough technological innovation Evidence from business registration data.</strong> <span class="paper-meta"><em>Technology in Society</em>. (外审中, 本人一作)</span><span class="tag">SSCI Q1</span></li>
+                    <li><strong>The Institutional filter: Geographic proximity and AI innovation in segmented markets.</strong> <span class="paper-meta"><em>Research Policy</em>. (投稿中, 独作)</span><span class="tag">SSCI Q1</span><span class="tag">ABS 4*</span></li>
+                    <li><strong>New-industrialization construction and firm entry.</strong> <span class="paper-meta"><em>Empirical Economics</em>. (外审中, 本人一作)</span><span class="tag">SSCI Q2</span></li>
+                    <li><strong>How data market drives regional energy efficiency?</strong> <span class="paper-meta"><em>Sustainable Futures</em>. (大修, 第一作者)</span><span class="tag">SCI Q2</span></li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>主要荣誉</h2>
+                <ul class="paper-list">
+                    <li><strong>第十七届上海青年经济学者优秀成果奖</strong> <span class="paper-meta">2023</span></li>
+                    <li><strong>中国工业经济学会优秀论文</strong> <span class="paper-meta">2023</span></li>
+                    <li><strong>研究生国家奖学金</strong> <span class="paper-meta">2021</span></li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>学术服务与技能</h2>
+                <p><strong>期刊审稿:</strong> 担任 <em>Regional Studies, Cities, Energy, Urban Climate</em> 等期刊匿名审稿人。</p>
+                <p><strong>专业技能:</strong> Stata, R, ArcGIS, LaTeX, 因果推断, 机器学习, 自然语言处理。</p>
+            </div>
+        </main>
+    </div>
+    
+    <footer>
+        <p></p>
+    </footer>
+
+</body>
+</html>
